@@ -1,10 +1,10 @@
 /* esbuild-css-modules-plugin-namespace:.\src\component\TabTreeView\CustomNode.module.css?esbuild-css-modules-plugin-built */
 .surfing_root_px3YjW {
-  height: 32px;
   border-radius: var(--size-2-2);
   border-bottom: 1px solid #eee;
   grid-template-columns: auto auto 1fr auto;
   align-items: center;
+  height: 32px;
   padding-inline-end: 8px;
   display: grid;
 }
@@ -17,10 +17,10 @@
 }
 .surfing_expandIconWrapper_px3YjW {
   cursor: pointer;
-  height: 24px;
-  width: 24px;
   justify-content: center;
   align-items: center;
+  width: 24px;
+  height: 24px;
   font-size: 0;
   transition: transform .1s linear;
   display: flex;
@@ -41,9 +41,9 @@
   left: -7px;
 }
 .surfing_pipeX_px3YjW {
-  height: 2px;
   z-index: -1;
   background-color: #e7e7e7;
+  height: 2px;
   position: absolute;
   top: 15px;
   left: -7px;
@@ -51,8 +51,8 @@
 
 /* esbuild-css-modules-plugin-namespace:.\src\component\TabTreeView\Placeholder.module.css?esbuild-css-modules-plugin-built */
 .surfing_root_3FoL3a {
-  height: 2px;
   background-color: #1967d2;
+  height: 2px;
   position: absolute;
   top: 0;
   right: 0;
@@ -61,9 +61,9 @@
 
 /* esbuild-css-modules-plugin-namespace:.\src\component\TabTreeView\TabTree.module.css?esbuild-css-modules-plugin-built */
 .surfing_app_zUmbJa {
-  height: 100%;
   margin: var(--size-4-2);
   border-radius: var(--size-2-2);
+  height: 100%;
 }
 .surfing_container_zUmbJa,
 .surfing_treeRoot_zUmbJa {

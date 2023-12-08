@@ -14,6 +14,7 @@
 	"keywords": [],
 	"author": "Boninall & Windily-cloud",
 	"license": "MIT",
+	"packageManager": "yarn@4.0.2",
 	"devDependencies": {
 		"@ant-design/icons": "^5.0.1",
 		"@codemirror/language": "^6.2.1",
