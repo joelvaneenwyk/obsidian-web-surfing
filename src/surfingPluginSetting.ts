@@ -255,7 +255,7 @@ export class SurfingSettingTab extends PluginSettingTab {
 		const tabClass = 'wb-desktop';
 		tabEl.addClass(tabClass);
 
-		setIcon(tabEl.createEl("div", { cls: 'wb-navigation-item-icon' }), tabNameToTabIconId[tabName], 20);
+		setIcon(tabEl.createEl("div", { cls: 'wb-navigation-item-icon' }), tabNameToTabIconId[tabName]);
 		// @ts-ignore
 		tabEl.createSpan().setText(t(tabName));
 

@@ -4,7 +4,7 @@ import { SurfingView } from "../surfingView";
 import { t } from "../translations/helper";
 import { FileSystemAdapter, moment } from "obsidian";
 
-export class EmbededWebView {
+export class EmbeddedWebView {
 	private contentEl: HTMLElement;
 	private webviewEl: HTMLElement;
 	private node: any;
@@ -23,11 +23,11 @@ export class EmbededWebView {
 		// this.contentEl.empty();
 
 		this.appendWebView();
-		this.contentEl.addClass("wb-view-content-embeded");
+		this.contentEl.addClass("wb-view-content-embedded");
 	}
 
 	unload() {
-		this.contentEl.removeClass("wb-view-content-embeded");
+		this.contentEl.removeClass("wb-view-content-embedded");
 		// this.contentEl.empty();
 	}
 
@@ -106,18 +106,18 @@ export class EmbededWebView {
 							const selectionText = document.getSelection().toString();
 							const linkToHighlight = e.srcElement.baseURI.replace(/\#\:\~\:text\=(.*)/g, "") + "#:~:text=" + encodeURIComponent(selectionText);
 							let link = "";
-							if ("${ highlightFormat }".includes("{TIME")) {
-								link = "${ getCurrentTime() }";
+							if ("${highlightFormat}".includes("{TIME")) {
+								link = "${getCurrentTime()}";
 								// // eslint-disable-next-line no-useless-escape
-								// const timeString = "${ highlightFormat }".match(/\{TIME\:[^\{\}\[\]]*\}/g)?.[0];
+								// const timeString = "${highlightFormat}".match(/\{TIME\:[^\{\}\[\]]*\}/g)?.[0];
 								// if (timeString) {
 								// 	// eslint-disable-next-line no-useless-escape
 								// 	const momentTime = moment().format(timeString.replace(/{TIME:([^\}]*)}/g, "$1"));
-								// 	link = "${ highlightFormat }".replace(timeString, momentTime);
+								// 	link = "${highlightFormat}".replace(timeString, momentTime);
 								// }
 							}
-							link = (link != "" ? link : "${ highlightFormat }").replace(/\{URL\}/g, linkToHighlight).replace(/\{CONTENT\}/g, selectionText.replace(/\\n/g, " "));
-						
+							link = (link != "" ? link : "${highlightFormat}").replace(/\{URL\}/g, linkToHighlight).replace(/\{CONTENT\}/g, selectionText.replace(/\\n/g, " "));
+
 							e.dataTransfer.setData('text/plain', link);
 							console.log(e);
 						}

@@ -17,7 +17,7 @@ const renamePlugin = {
 	name: 'rename-styles',
 	setup(build) {
 		build.onEnd(() => {
-			const {outfile} = build.initialOptions;
+			const { outfile } = build.initialOptions;
 			const outcss = outfile.replace(/\.js$/, '.css');
 			const fixcss = outfile.replace(/main\.js$/, 'styles.css');
 			if (fs.existsSync(outcss)) {
@@ -39,7 +39,7 @@ esbuild.build({
 			inject: false,
 			localsConvention: 'camelCaseOnly', // optional. value could be one of 'camelCaseOnly', 'camelCase', 'dashes', 'dashesOnly', default is 'camelCaseOnly'
 
-			generateScopedName: (name, filename, css) => string, // optional. refer to: https://github.com/madyankin/postcss-modules#generating-scoped-names
+			generateScopedName: (name, filename, css) => String, // optional. refer to: https://github.com/madyankin/postcss-modules#generating-scoped-names
 
 			filter: /\.modules?\.css$/i, // Optional. Regex to filter certain CSS files.
 
@@ -72,7 +72,7 @@ esbuild.build({
 		'@lezer/lr',
 		...builtins],
 	format: 'cjs',
-	watch: !prod,
+	// watch: !prod,
 	target: 'es2021',
 	logLevel: "info",
 	sourcemap: prod ? false : 'inline',

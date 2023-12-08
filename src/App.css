@@ -136,11 +136,11 @@
 	opacity: 1;
 }
 
-.wb-close-btn:hover > button > .lucide-x-square {
+.wb-close-btn:hover>button>.lucide-x-square {
 	color: #d99da8;
 }
 
-.wb-close-btn > button > .lucide-x-square {
+.wb-close-btn>button>.lucide-x-square {
 	color: var(--color-red);
 }
 
@@ -416,7 +416,8 @@ input[type="text"].wb-page-search-bar-input:focus-visible {
 }
 
 .wb-omni-box::-webkit-scrollbar {
-	display: none; /* Safari and Chrome */
+	display: none;
+	/* Safari and Chrome */
 }
 
 .theme-light .wb-omni-box {
@@ -546,7 +547,8 @@ div[data-type^="empty"] .wb-bookmark-bar {
 }
 
 .wb-bookmark-bar::-webkit-scrollbar {
-	display: none; /* Safari and Chrome */
+	display: none;
+	/* Safari and Chrome */
 }
 
 
@@ -557,7 +559,8 @@ div[data-type^="empty"] .wb-bookmark-bar {
 }
 
 .wb-bookmark-bar-container::-webkit-scrollbar {
-	display: none; /* Safari and Chrome */
+	display: none;
+	/* Safari and Chrome */
 }
 
 .wb-bookmark-folder-icon,
@@ -577,8 +580,7 @@ div[data-type^="empty"] .wb-bookmark-bar {
 	width: var(--size-4-4);
 }
 
-div[data-type^="empty"].workspace-leaf-content
-.view-content.mod-wb-bookmark-bar {
+div[data-type^="empty"].workspace-leaf-content .view-content.mod-wb-bookmark-bar {
 	padding: unset;
 	overflow: auto;
 }
@@ -640,7 +642,8 @@ div[data-type^="empty"].workspace-leaf-content
 
 }
 
-.wb-refresh-button, .wb-refresh-button .lucide-refresh-cw {
+.wb-refresh-button,
+.wb-refresh-button .lucide-refresh-cw {
 	height: var(--size-4-4);
 	width: var(--size-4-4);
 	color: var(--color-base-50);
@@ -665,7 +668,9 @@ div[data-type^="empty"].workspace-leaf-content
 /*	height: 100px;*/
 /*}*/
 
-.ant-table-wrapper, .ant-spin-nested-loading, .ant-spin-container {
+.ant-table-wrapper,
+.ant-spin-nested-loading,
+.ant-spin-container {
 	height: 100%;
 }
 
@@ -673,7 +678,7 @@ div[data-type^="empty"].workspace-leaf-content
 	height: 86vh;
 }
 
-.ant-table-wrapper .ant-table-thead > tr > th {
+.ant-table-wrapper .ant-table-thead>tr>th {
 	background-color: var(--background-secondary);
 }
 
@@ -715,7 +720,7 @@ div[data-type^="surfing-bookmark-manager"] .ant-table-thead {
 	background-color: var(--color-base-30);
 }
 
-.cm-scroller .wb-view-content-embeded {
+.cm-scroller .wb-view-content-embedded {
 	height: 500px;
 }
 

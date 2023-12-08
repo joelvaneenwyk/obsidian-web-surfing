@@ -50,9 +50,9 @@ export default class searchBox {
 		this.inputEl.addEventListener("keyup", this.search.bind(this))
 		this.inputEl.addEventListener("keyup", this.exist.bind(this))
 
-		setIcon(this.closeButtonEl, "x", 8);
-		setIcon(this.backwardButtonEl, "arrow-up", 8);
-		setIcon(this.forwardButtonEl, "arrow-down", 8);
+		setIcon(this.closeButtonEl, "x");
+		setIcon(this.backwardButtonEl, "arrow-up");
+		setIcon(this.forwardButtonEl, "arrow-down");
 
 		this.inputEl.focus();
 	}

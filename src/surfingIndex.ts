@@ -25,7 +25,7 @@ import { InPageIconList } from "./component/InPageIconList";
 import { InNodeWebView } from "./component/InNodeWebView";
 import { BookMarkBar, updateBookmarkBar } from "./component/BookMarkBar/BookMarkBar";
 import { SurfingBookmarkManagerView, WEB_BROWSER_BOOKMARK_MANAGER_ID } from './surfingBookmarkManager'
-import { EmbededWebView } from "./component/EmbededWebView";
+import { EmbeddedWebView } from "./component/EmbeddedWebView";
 import { loadJson, saveJson } from "./utils/json";
 import { hashCode, nonElectronGetPageTitle } from "./component/BookmarkManager/utils";
 import { TabTreeView, WEB_BROWSER_TAB_TREE_ID } from "./component/TabTreeView/TabTreeView";
@@ -54,7 +54,7 @@ export default class SurfingPlugin extends Plugin {
 		try {
 			this.registerExtensions(HTML_FILE_EXTENSIONS, WEB_BROWSER_FILE_VIEW_ID);
 		} catch (error) {
-			new Notice(`File extensions ${ HTML_FILE_EXTENSIONS } had been registered by other plugin!`);
+			new Notice(`File extensions ${HTML_FILE_EXTENSIONS} had been registered by other plugin!`);
 		}
 
 		this.openTabTreeView();
@@ -460,8 +460,8 @@ export default class SurfingPlugin extends Plugin {
 
 					const title = surfingView.currentTitle;
 					if (!title) return;
-					if (markdown.length === 0) markdown = `- [${ title }](<${ url }>)`;
-					else markdown += `\n- [${ title }](<${ url }>)`;
+					if (markdown.length === 0) markdown = `- [${title}](<${url}>)`;
+					else markdown += `\n- [${title}](<${url}>)`;
 				});
 
 				try {
@@ -797,11 +797,11 @@ export default class SurfingPlugin extends Plugin {
 	private registerEmbededHTML() {
 		// @ts-expect-error
 		app.embedRegistry.registerExtension("html", (e, t, n) => {
-			return new EmbededWebView(e, t);
+			return new EmbeddedWebView(e, t);
 		});
 		// @ts-expect-error
 		app.embedRegistry.registerExtension("htm", (e, t, n) => {
-			return new EmbededWebView(e, t);
+			return new EmbeddedWebView(e, t);
 		});
 	}
 
