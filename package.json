@@ -22,6 +22,7 @@
 		"@codemirror/view": "^6.22.1",
 		"@minoru/react-dnd-treeview": "^3.4.4",
 		"@mui/icons-material": "^5.14.19",
+		"@mui/material": "^5.14.20",
 		"@popperjs/core": "^2.11.8",
 		"@types/node": "^20.10.4",
 		"@types/react": "^18.2.42",
@@ -44,9 +45,9 @@
 		"react-scripts": "^5.0.1",
 		"react-usestateref": "^1.0.8",
 		"tslib": "2.6.2",
-		"typescript": "5.3.3"
+		"typescript": "^5.0.0"
 	},
-	"dependencies": {
-		"@mui/material": "^5.14.20"
+	"peerDependencies": {
+		"typescript": "^4.0.0"
 	}
 }
